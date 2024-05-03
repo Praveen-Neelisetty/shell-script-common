@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#making comman method for validation and root user 
 source ./common.sh
 
 check_root 
