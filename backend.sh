@@ -4,6 +4,8 @@ source ./common.sh
 
 Check_RootUser 
 
+read -r -p "Enter You MySQL Password: " mySql_root_password
+
 dnf module disable nodejs:18 -y &>>$LOGFILE
 VALIDATE $? "Nodejs 18 version Disabled"
 
