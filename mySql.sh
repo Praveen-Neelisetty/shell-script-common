@@ -1,8 +1,12 @@
 #!/bin/bash
 
-read -r -p "Enter You MySQL Password: " MySqlPassword
 
 source ./common.sh
+
+check_root
+
+read -r -p "Enter You MySQL Password: " MySqlPassword
+
 
 #dnf list installed mysql &>>$LOGFILE "MySQL Exists or not"
 #VALIDATE $? "MySQL Exists?"
