@@ -2,7 +2,7 @@
 
 source ./common.sh
 
-check_root 
+Check_RootUser 
 
 dnf module disable nodejs:18 -y &>>$LOGFILE
 VALIDATE $? "Nodejs 18 version Disabled"

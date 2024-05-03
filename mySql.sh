@@ -3,7 +3,7 @@
 
 source ./common.sh
 
-check_root
+Check_RootUser
 
 read -r -p "Enter You MySQL Password: " MySqlPassword
 
