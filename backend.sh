@@ -1,8 +1,9 @@
 #!/bin/bash
 
+#making comman method for validation and root user 
 source ./common.sh
 
-check_root
+check_root 
 
 dnf module disable nodejs:18 -y &>>$LOGFILE
 VALIDATE $? "Nodejs 18 version Disabled"
